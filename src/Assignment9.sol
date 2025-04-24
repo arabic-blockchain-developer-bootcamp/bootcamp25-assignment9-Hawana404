@@ -7,11 +7,14 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 // inherit from Ownable contract 
 contract Assignment9 is Ownable {
     // create a public array called `deployedContracts` to store contracts addresses in it 
-    address[] public deployedContracts;
+    SimpleContract[] public deployedContracts;
     // call Ownable constructor of openzeppelin contract
     constructor () Ownable(msg.sender) {
         // set the owner to the address that deploys this contract
         // Hint: You can use `msg.sender` to get the address of the account that deploys this contract
+    // set the owner to the address that deploys this contract
+
+        
     }
 
     // @dev Factory to deploy new instances of `SimpleContract`
